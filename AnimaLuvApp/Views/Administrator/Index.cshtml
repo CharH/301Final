@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "Administrator Home";
+}
+<h2>Admin Page</h2>
+
+<h3>User Admin</h3>
+<li>@Html.ActionLink("Authorizations/Roles", "Index", "Role")</li>
+<h3>Toy Admin</h3>
+<div>
+    <li>@Html.ActionLink("Color List", "Index", "Colors")</li>
+    <li>@Html.ActionLink("Sizes", "Index", "Sizes") </ li >
+    <li>@Html.ActionLink("Animals", "Index", "Animals") </ li >
+    <li> @Html.ActionLink("Materials", "Index", "Materials") </ li >
+    <li>@Html.ActionLink("Stuffing Types", "Index", "Stuffings") </ li >
+    <li>@Html.ActionLink("Outfits", "Index", "Outfits") </ li >
+</div>
+
+

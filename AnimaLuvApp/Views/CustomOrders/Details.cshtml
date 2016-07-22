@@ -1,0 +1,78 @@
+﻿@model AnimaLuvApp.Models.CustomOrder
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CustomOrder</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Customer Name
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            Date Ordered
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OrderDate)
+        </dd>
+        <dt>
+            Size
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Size.Name)
+        </dd>
+        <dt>
+            Animal Type
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Animal.Name)
+        </dd>
+        
+        <dt>
+            Color
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Color.Name)
+        </dd>
+        <dt>
+            Outfit
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Outfit.Name)
+        </dd>
+        <dt>
+            Fabric Type
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Material.Name)
+        </dd>
+        <dt>
+            Stuffing Type
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Stuffing.Name)
+        </dd>
+        
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CustomOrderID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
